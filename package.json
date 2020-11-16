@@ -1,6 +1,6 @@
 {
   "name": "raccoon-cloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Framework for create application based on Raccoon ",
   "main": "index.mjs",
   "scripts": {

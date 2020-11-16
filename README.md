@@ -31,7 +31,7 @@ import { HttpApplication } from 'raccoon-cloud';
 // библиотеки NodeJS
 import path from 'path';
 // Собираем путь до папки со статкой
-const servepath = path.join(__dirname, 'public');
+const servepath = path.join('./', 'public');
 // Импортирум плагин Archibald (для создания дополнительного экземпляра)
 import { Archibald } from 'raccoon-ark';
 
@@ -55,7 +55,7 @@ const app = new HttpApplication({
     ],
     // Задаём пути до шпаблонов страниц 
     templates: {
-        index: 'C:/Users/xyz/Documents/GitHub/raccoon/examples/templates/index.pug'
+        index: './templates/index.pug'
     },
     // Задаём роутинг для обработки в режиме API сервера
     api: {
