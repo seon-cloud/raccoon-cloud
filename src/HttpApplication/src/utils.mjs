@@ -158,7 +158,7 @@ const preparePistachioOptions = options => {
 
     if (options?.database) {
         pistachioOption.dbName = (options.database?.adapter 
-                                && opttions.database.adapter.name)
+                                && options.database.adapter.name)
                                 ? options.database.adapter.name
                                 : undefined;
     }
