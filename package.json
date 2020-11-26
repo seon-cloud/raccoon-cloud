@@ -1,6 +1,6 @@
 {
   "name": "raccoon-cloud",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Framework for create application based on Raccoon ",
   "main": "index.mjs",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/seon-cloud/raccoon-cloud#readme",
   "dependencies": {
-    "raccoon-ark": "^0.0.28",
+    "raccoon-ark": "^0.0.29",
     "raccoon-sanctuary": "^0.0.33"
   }
 }
