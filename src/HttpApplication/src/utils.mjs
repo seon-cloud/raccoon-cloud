@@ -156,6 +156,13 @@ const preparePistachioOptions = options => {
         pistachioOption.uses = options.uses;
     }
 
+    if (options?.database) {
+        pistachioOption.dbName = (options.database?.adapter 
+                                && opttions.database.adapter.name)
+                                ? options.database.adapter.name
+                                : undefined;
+    }
+
     return pistachioOption;
 };
 
