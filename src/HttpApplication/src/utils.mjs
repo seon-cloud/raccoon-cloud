@@ -205,8 +205,8 @@ const preparePluginsOptions = options => {
 
     const databasePlugin = options?.database
         ? {
-            plugin: database.adapter,
-            options: database.options
+            plugin: options.database.adapter,
+            options: options.database.options
         }
         : undefined
 
