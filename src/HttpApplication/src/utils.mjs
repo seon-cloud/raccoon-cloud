@@ -196,9 +196,24 @@ const preparePluginsOptions = options => {
         }
     });
 
-    const additionalsPlugins = (options?.plugins)
-        ? (options.plugins)
+    const databasePlugin = options?.database
+        ? {
+            plugin: database.adapter,
+            options: database.options
+        }
         : undefined
+
+    let additionalsPlugins;
+    if (options?.plugins && databasePlugin) {
+        additionalsPlugins = options.plugins;
+        additionalsPlugins.push(databasePlugin);
+    } else if (options?.plugins && !databasePlugin) {
+        additionalsPlugins = options.plugins;
+    } else if (!options?.plugins && databasePlugin) {
+        additionalsPlugins = [databasePlugin];
+    } else {
+        additionalsPlugins = undefined;
+    }
 
     return { pluginsOptions, additionalsPlugins };
 };
