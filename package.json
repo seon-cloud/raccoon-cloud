@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/seon-cloud/raccoon-cloud#readme",
   "dependencies": {
-    "raccoon-ark": "^0.0.30",
+    "raccoon-ark": "^0.0.32",
     "raccoon-sanctuary": "^0.0.33"
   }
 }
