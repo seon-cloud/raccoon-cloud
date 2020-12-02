@@ -152,6 +152,10 @@ const preparePistachioOptions = options => {
         routes
     };
 
+    if (options?.middlewares) {
+        pistachioOption.actions = { ...actions, ...options.middlewares };
+    }
+
     if (options?.uses) {
         pistachioOption.uses = options.uses;
     }
